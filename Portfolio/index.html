@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <script src="KMPortfolio.js"></script>
         <link rel="stylesheet" href="KMPortfolio.css">
         <title>Kiera Pierson, UX/UI Designer</title>
     </head>
@@ -10,10 +12,11 @@
     <!----------NAVIGATION---------->
         <div class="navbar">
             <div>
-                <a href="#home">Home</a>
+                <a class="active" href="#home">Home</a>
+                <a href="#Slideshow">Slideshow</a>
                 <a href="#about">About</a>
                 <a href="#github">Github</a>
-                <a href="#contact">Contact</a>
+                <a onclick= "openForm()" ondblclick="closeForm()" class="contact">Contact</a>
             </div>
         </div>
         <br>
@@ -21,7 +24,7 @@
     <!----------HOME---------------->
         <div id="home">
             <video autoplay muted loop id="code_vid">
-                <source src="images/vid2.mp4" type="video/mp4">
+                <source src="images/vid1.mp4" type="video/mp4">
                 Your browser does not support HTML5 video
             </video>
         </div>
@@ -41,12 +44,67 @@
                         <br> Enjoy!   
                 </p>
             </strong>
+        </div>
+    <!--Slideshow section-->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!---Slide 1-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/me2.jpg" alt="Kiera Pierson">
+                    <div class="text">I'd love to work on your next project!</div>
+                </div>
+                <!---Slide 2-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/html.png" alt="Html, CSS, Javascript logos">
+                    <div class="text">I'm familiar with popular programming languages.</div>
+                </div>
+                <!---Slide 3-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/pic2.jpg" alt="Group at table">
+                    <div class="text">I'm a team player!</div>
+                </div>
+                <!---Slide 4-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/HTML-Code.jpg" alt="Programming code">
+                    <div class="text">I'm a full stack developer.</div>
+                </div>
+                <!---Slide 5-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/python.jpg" alt="Python Logo">
+                    <div class="text">I've worked with Python.</div>
+                </div>
+                <!---Slide 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/pic6.jpg" alt="A work area">
+                    <div class="text">Contact me now!</div>
+                </div>
+
+                <!--Prev/Next buttons-->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!---Adding space between the slideshow and the dots-->
+
+            <!---The dots-->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
 
     <!----------ABOUT--------------->
         <div class="row" id="about">
+            <!--Left Column-->
             <div class="column_2">
                 <img src="images/pic3.jpg" alt="The at home office">
             </div>
+            <!---Right Column-->
             <div class="column_1">
                 <h1>About</h1>
                 <p>
@@ -73,29 +131,30 @@
         </div>
     <!----------CONTACT------------->
 
-        <div class="row">
-            <div class="column_2 column_tall">
-                <img src="images/pic2.jpg" alt="Meeting">
-            </div>
-            <div class="column_1 column_tall" id="contact">
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="post" class="form-container">
                 <h1>Contact</h1>
-                <form action="" method="post">
-                    <label>Name</label>
-                        <input type="text" placeholder="Please enter your name">
-                    <label>Email</label>
-                        <input type="text" id="email" name="email" placeholder="Please enter your email">
-                    <label>Message</label>
-                        <input type="text" id="message" name="message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Please enter your name" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" name="email" placeholder="Please enter your email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" name="message" placeholder="Please write your message here">
+                    
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
 
             </div>
-        </div>
-
+        </div
 
         <footer>
             <p>
-                <p class="center">&copy Prosper Consulting Inc.,<a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <p class="center">&copy Prosper Consulting Inc.,<a href="kiera@kmpierson.com" target="_blank">Kiera Pierson</a></p>
                 <br>
             </p>
         </footer>
