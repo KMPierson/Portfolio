@@ -10,7 +10,7 @@ body {
     opacity: 1;
     transition: 3s opacity;
     letter-spacing: .2vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 1.5vw;
     overflow-x: hidden; /*This prevents to horizontal scroll bar from appearing when the quote is scolled over*/
     user-select: none; /*this prevents the text from being highlighted */
@@ -22,7 +22,7 @@ body.fade-out {
 
 h1 {
     text-transform: uppercase;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
     margin-top: 3%;
     color: #1a1a1a;
@@ -40,7 +40,7 @@ h1:hover {
 }
 
 p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     text-align: justify;
     letter-spacing: 1px;
     font-size: 20px;
@@ -117,7 +117,7 @@ footer {
     text-align: center;
     display: inline;
     color:#3a3931;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
     padding: 14px 16px;
     position:relative;
@@ -234,7 +234,7 @@ footer {
     bottom: 0;
     width: 100%; 
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     letter-spacing: .1vw;
     font-size: 1.5vw;
     background-color: rgba(0,0,0,0.75);
@@ -323,7 +323,7 @@ footer {
 }
 
 button {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: .3vw;
     font-size: 1.5vw;
     font-weight: bold;
