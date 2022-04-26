@@ -63,7 +63,7 @@ p:hover {
 }
 
 a {
-    color: #b95c50; /*This makes all links blue*/
+    color: #b95c50; /*This makes all links pink*/
     cursor: pointer; /*This turns the cursor into a hand when over a link*/
     text-decoration: underline;
 }
